@@ -14,9 +14,28 @@
 <meta charset="ISO-8859-1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <title>Hospital Management System</title>
+
+<style type="text/css">
+ body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            /* Set the background image */
+            background-image: url('images/Hospital.jpg');
+            
+            /* Adjust background properties */
+            background-size: cover; /* Adjust to 'contain' or other values as needed */
+            background-position: center center; /* Adjust positioning as needed */
+            background-repeat: no-repeat;
+            
+        
+        }</style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" >
   <div class="container-fluid">
     <a class="navbar-brand" href="index.jsp">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

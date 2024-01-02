@@ -26,6 +26,7 @@
 			<th>Name</th>
 			<th>Age</th>
 			<th>Sex</th>
+			<th>Action</th>
 		</tr>
 
 
@@ -36,11 +37,39 @@
 				<td>${patient.name}</td>
 				<td>${patient.age}</td>
 				<td>${patient.sex}</td>
+				<td>
+				
+					<form id="updateForm${patient.patientId}" action="UpdatePatient"
+						method="get">
+						<input type="hidden" name="patientId" value="${patient.patientId}">
+						<img class="delete-image" src="images/edit.svg" alt="Update"
+							onclick="submitUpdateForm(${patient.patientId})">
+					</form>
+				
+				<form id="deleteForm${patient.patientId}" action="DeletePatient"
+						method="post">
+						<input type="hidden" name="patientId" value="${patient.patientId}">
+						<img class="delete-image" src="images/delete.svg" alt="Delete"
+							onclick="submitForm(${patient.patientId})">
+					</form>
+				</td>
+					
 			</tr>
 		</c:forEach>
 	</table>
 
+<!-- JS code -->
 
+	<script>
+		function submitForm(patientId) {
+			// Submit the corresponding form
+			document.getElementById("deleteForm" + patientId).submit();
+		}
+		function submitUpdateForm(patientId) {
+			// Submit the corresponding form
+			document.getElementById("updateForm"+patientId).submit();
+		}
+	</script>
 
 <!-- bootstrap js import-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

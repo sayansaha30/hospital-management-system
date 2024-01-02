@@ -100,8 +100,7 @@
     <servlet-name>ViewAllPatientName</servlet-name>
     <url-pattern>/ViewAllPatientName</url-pattern>
   </servlet-mapping>
-  
-   <servlet>
+  <servlet>
     <description></description>
     <display-name>ViewAllPatientAndDoctorName</display-name>
     <servlet-name>ViewAllPatientAndDoctorName</servlet-name>
@@ -110,5 +109,45 @@
   <servlet-mapping>
     <servlet-name>ViewAllPatientAndDoctorName</servlet-name>
     <url-pattern>/ViewAllPatientAndDoctorName</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteDoctor</display-name>
+    <servlet-name>DeleteDoctor</servlet-name>
+    <servlet-class>controller.DeleteDoctor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteDoctor</servlet-name>
+    <url-pattern>/DeleteDoctor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateDoctor</display-name>
+    <servlet-name>UpdateDoctor</servlet-name>
+    <servlet-class>controller.UpdateDoctor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateDoctor</servlet-name>
+    <url-pattern>/UpdateDoctor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeletePatient</display-name>
+    <servlet-name>DeletePatient</servlet-name>
+    <servlet-class>controller.DeletePatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeletePatient</servlet-name>
+    <url-pattern>/DeletePatient</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdatePatient</display-name>
+    <servlet-name>UpdatePatient</servlet-name>
+    <servlet-class>controller.UpdatePatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdatePatient</servlet-name>
+    <url-pattern>/UpdatePatient</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -30,7 +30,7 @@ if (session.getAttribute("userName") == null) {
 			
 			<div class="form-group">
 				<label for="doctorName">Doctor Name:</label> <select
-					name="doctorName" class="form-select">
+					name="doctorName" class="form-select" required="required">
 
 					<c:forEach var="doctor" items="${doctorList}">
 
@@ -45,7 +45,7 @@ if (session.getAttribute("userName") == null) {
 			<div class="form-group">
 				<label for="patientName">Patient Name:</label> 
 				<select
-					name="patientName" class="form-select">
+					name="patientName" class="form-select" required="required">
 
 					<c:forEach var="patient" items="${patientList}">
 
@@ -56,7 +56,7 @@ if (session.getAttribute("userName") == null) {
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="date">Date:</label> <input type="date"
+				<label for="date">Date:</label> <input required="required" type="date"
 					class="form-control" id="date" name="date">
 			</div>
 

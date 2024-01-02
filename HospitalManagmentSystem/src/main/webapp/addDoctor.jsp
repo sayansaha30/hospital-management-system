@@ -27,11 +27,11 @@
 		<h2>Add Doctor</h2>
 		<form action="AddDoctor" method="post">
 			<div class="form-group">
-				<label for="name">Name:</label> <input type="text"
+				<label for="name">Name:</label> <input type="text" required="required"
 					class="form-control" name="name" placeholder="Enter your name">
 			</div>
 			<div class="form-group">
-				<label for="specialization">Specialization:</label> <input type="text"
+				<label for="specialization">Specialization:</label> <input required="required" type="text"
 					class="form-control" id="specialization" name="specialization" placeholder="Enter your specialization">
 			</div>
 		

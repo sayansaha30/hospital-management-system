@@ -24,16 +24,16 @@
 		<h2>Add Patient</h2>
 		<form action="AddPatient" method="post">
 			<div class="form-group">
-				<label for="name">Name:</label> <input type="text"
+				<label for="name">Name:</label> <input required="required" type="text"
 					class="form-control" name="name" placeholder="Enter your name">
 			</div>
 			<div class="form-group">
-				<label for="age">Age:</label> <input type="number"
+				<label for="age">Age:</label> <input required="required" type="number"
 					class="form-control" id="age" name="age" placeholder="Enter your age">
 			</div>
 			<div class="form-group">
 				<label for="sex">Sex:</label> <label for="sex"> <input
-					type="radio" name="sex" value="M">Male
+					type="radio" required="required" name="sex" value="M">Male
 				</label> <label for="sex"><input type="radio" name="sex" value="F">Female</label>
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
